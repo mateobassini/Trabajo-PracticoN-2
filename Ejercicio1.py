@@ -1,10 +1,12 @@
-class MaestroPizzero():
-    def _init_(self, nombre):
-        self.nombre = nombre
-        self.pizzasPorCocinar = []
-        self.pizzasPorEntregar = []
+from Ejercicio2 import Pizza
 
-    def establecerNombre(self, nombre):
+class MaestroPizzero():
+    def _init_(self, nombre: str):
+        self.nombre= nombre
+        self.pizzasPorCocinar=[]
+        self.pizzasPorEntregar=[]
+
+    def establecerNombre(self, nombre: str):
         self.nombre = nombre
 
     def obtenerNombre(self):
@@ -14,7 +16,7 @@ class MaestroPizzero():
         return self.pizzasPorCocinar
 
     def obtenerPizzasPorEntregar(self):
-        return self.pizzasPorEntrega
+        return self.pizzasPorEntregar
 
     def tomarPedido(self, var):     # paso i)
         if var:
@@ -36,10 +38,6 @@ class MaestroPizzero():
             if self.pizzasPorEntregar:
                 entregadas.append(self.pizzasPorEntregar.pop(0))
         return entregadas
-
-
-
-
             
             
 

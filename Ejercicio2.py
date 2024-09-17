@@ -1,9 +1,12 @@
 class Pizza:
-    def _init_(self, variedad):
-        self.variedad = variedad
+    # Constructor
+    def __init__(self, var: str):
+      self.variedad = var
 
-    def establecerVariedad(self, variedad):
-        self.variedad = variedad
+    # Comandos
+    def establecerVariedad(self, var: str):
+        self.variedad = var
 
+    # Consultas
     def obtenerVariedad(self):
         return self.variedad
