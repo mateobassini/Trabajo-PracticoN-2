@@ -1,7 +1,7 @@
 from Ejercicio2 import Pizza
 
 class MaestroPizzero():
-    def _init_(self, nombre: str):
+    def __init__(self, nombre: str):
         self.nombre= nombre
         self.pizzasPorCocinar=[]
         self.pizzasPorEntregar=[]
