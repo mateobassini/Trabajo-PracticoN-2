@@ -4,7 +4,7 @@ from Ejercicio3 import Mozo
 class TesterPizzeria:
      def main(self):
         # Crear los objetos de tipo MaestroPizzero, Mozo y Pizza
-        maestro = MaestroPizzero()
+        maestro = MaestroPizzero("Juan")
         mozo1 = Mozo("Alfredo")
         mozo2 = Mozo("Roberto")
 
